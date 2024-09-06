@@ -1,6 +1,7 @@
 package br.com.etecia.myapp;
 
 import android.os.Bundle;
+import android.os.Handler;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +21,16 @@ public class SplashActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        //comentario de linha
+
+        /*comentário de bloco*/
+        //abrir a jenela de login ultilizando uma thread
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        },3000);
     }
 }
