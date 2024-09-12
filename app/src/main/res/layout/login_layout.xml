@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
     android:gravity="center_horizontal|center_vertical"
     android:orientation="vertical"
     tools:context=".LoginActivity">
@@ -17,14 +18,13 @@
         android:src="#2c2c2c" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/usuario"
+        android:id="@+id/txtUsarioLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
         android:hint="Usuário"
-        app:startIconDrawable="@drawable/baseline_account_box"
         app:endIconMode="clear_text"
-        >
+        app:startIconDrawable="@drawable/baseline_account_box">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -33,44 +33,51 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/senha"
+        android:id="@+id/txtSenhaLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Senha"
-        app:startIconDrawable="@drawable/baseline_lock"
         app:endIconMode="password_toggle"
-        >
+        app:startIconDrawable="@drawable/baseline_lock">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            />
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton
-            android:text="Recuperar "
+            android:id="@+id/btnCadastrarLogin"
             style="@style/Widget.Material3.Button.TextButton"
-            android:layout_marginRight="100dp"
-            android:layout_marginLeft="19dp"
-            android:layout_marginTop="15dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:text="Cadastrar" />
+
         <com.google.android.material.button.MaterialButton
-            android:text="Entrar"
+            android:id="@+id/btnRcuperarSenha"
             style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="Recuperar senha" />
+
 
     </LinearLayout>
 
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Entrar"
+        app:cornerRadius="0dp" />
 
 </LinearLayout>
