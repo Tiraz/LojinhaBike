@@ -55,7 +55,7 @@ public class LoginActivity extends AppCompatActivity {
                     finish();
                 }
                 else {
-                    Toast.makeText().show();
+                    Toast.makeText(getApplicationContext(),"Usuário ou senha inválidos", Toast.LENGTH_SHORT).show();
 
                 }
             }
