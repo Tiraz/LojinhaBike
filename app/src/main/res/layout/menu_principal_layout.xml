@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
+
     tools:context=".MenuPrincipalActivity">
 
     <TextView
@@ -48,7 +48,7 @@
                     android:layout_width="190dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center"
-                    android:scaleType="centerInside"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/bike" />
 
                 <TextView
@@ -84,6 +84,7 @@
                     android:layout_width="190dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/acessorio" />
 
                 <TextView
@@ -126,6 +127,7 @@
                     android:layout_width="190dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/manutencao" />
 
                 <TextView
@@ -158,9 +160,10 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="190dp"
+                    android:layout_width="150dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center"
+                    android:scaleType="centerInside"
                     android:src="@drawable/dica" />
 
                 <TextView
@@ -238,6 +241,7 @@
                     android:layout_width="190dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center"
+                    android:scaleType="centerInside"
                     android:src="@drawable/eventos" />
 
                 <TextView

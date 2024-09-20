@@ -4,19 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".BikeActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/idRetornarMenuBike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/baseline_arrow_back" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="15dp"
+        android:background="#52000000"
+        android:padding="5dp"
         android:text="Bikes"
         android:textAllCaps="true"
         android:textColor="#FF0000"
-        android:background="#52000000"
-        android:padding="5dp"
         android:textSize="30sp"
         android:textStyle="bold" />
 
