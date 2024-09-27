@@ -16,21 +16,12 @@
             android:id="@+id/idRetornarMenuBike"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:navigationIcon="@drawable/baseline_arrow_back" />
+            app:navigationIcon="@drawable/baseline_arrow_back"
+            app:title="Bike"
+            />
     </com.google.android.material.appbar.MaterialToolbar>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="15dp"
-        android:background="#52000000"
-        android:padding="5dp"
-        android:text="Bikes"
-        android:textAllCaps="true"
-        android:textColor="#FF0000"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+
 
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
@@ -57,6 +48,12 @@
 
 
     </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/idViewPagerBike"/>
 
 
 </LinearLayout>
