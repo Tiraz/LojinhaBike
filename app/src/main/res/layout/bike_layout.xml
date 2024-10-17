@@ -18,6 +18,9 @@
             android:layout_height="wrap_content"
             app:navigationIcon="@drawable/baseline_arrow_back"
             app:title="Bike"
+            app:titleCentered="true"
+            app:titleTextColor="#F44336"
+            
             />
     </com.google.android.material.appbar.MaterialToolbar>
 

@@ -12,7 +12,7 @@
         android:src="@drawable/baseline_card_giftcard"
         android:layout_gravity="bottom|right"
         android:layout_margin="50dp"
-        android:outlineSpotShadowColor="#00BCD4"
+        android:outlineSpotShadowColor="#3F51B5"
         />
 
     <androidx.recyclerview.widget.RecyclerView
